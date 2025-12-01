@@ -1,29 +1,25 @@
 {
-  "name": "fluxy_entregas_backend",
+  "name": "products-server",
   "version": "1.0.0",
-  "description": "Back end de uma aplicação criada com proposito de atender as organizações com suas empresas",
-  "type": "module",
+  "description": "API Produtos com acesso a banco de dados",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/GabrielLS88/fluxy_entregas_backend.git"
-  },
-  "keywords": [],
-  "author": "",
+  "author": "Camilo Barreto",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/GabrielLS88/fluxy_entregas_backend/issues"
-  },
-  "homepage": "https://github.com/GabrielLS88/fluxy_entregas_backend#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^17.2.3",
+    "dotenv": "^16.5.0",
     "express": "^5.1.0",
-    "nodemon": "^3.1.10"
+    "mongoose": "^8.15.1",
+    "multer": "^2.0.0",
+    "nodejs-mongo": "file:",
+    "products-server": "file:"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
   }
 }
