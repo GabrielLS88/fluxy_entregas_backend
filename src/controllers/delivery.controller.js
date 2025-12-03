@@ -38,7 +38,7 @@ exports.criarEntrega = async (req, res) => {
 exports.listarEntregas = async (req, res) => {
     try {
         const entregas = await Delivery.find();
-        res.json(entregas);
+        res.status(200).json(entregas);
     }
     catch (err) {
         res.status(500).json({ erro: err.message });
@@ -90,7 +90,7 @@ exports.removerEntregaPorId = async (req, res) => {
 
         if (!entrega) return res.status(404).json({ erro: 'Entrega não encontrada' });
 
-        res.json({ mensagem: 'Entrega removida com sucesso' });
+        res.status(204).json({ mensagem: 'Entrega removida com sucesso' });
     }
     catch (err) {
         res.status(500).json({ erro: err.message });
