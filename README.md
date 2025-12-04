@@ -25,4 +25,4 @@ MONGODB_URI="mongodb://mongo:2505@147.79.110.10:5095/" -> URL de conexão do seu
 
 Apos isso basta dar o comando "npm i" para instalar as dependencias do projeto.
 
-Depois npm run dev para startar o projeto que vai rodar na "http://localhost:5090"
+Depois "npm run dev" para iniciar o projeto que vai rodar na "http://localhost:5090"
